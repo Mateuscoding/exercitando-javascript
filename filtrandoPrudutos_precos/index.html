@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1>FILTRANDO PRODUTOS POR PREÇOS</h1>
+    </header>
+
+    <main>
+
+        <div class="filtro">
+
+            <ul>
+                <li>
+                    <p>R$</p>
+                    <button onclick="filtrarPreco(10)">10 até 100</button>
+                </li>
+                <li>
+                    <p>R$</p>
+                    <button onclick="filtrarPreco(100)">100 até 1000</button>
+                </li>
+                <li>
+                    <p>R$</p>
+                    <button onclick="filtrarPreco(1000)">1000 até 10000</button>
+                </li>
+                <li class="valor-personalizado">
+                    <p>Personalizado</p>
+                    <label for="">
+                        <input type="text" id="valor-inicial">
+                        <span>-</span>
+                        <input type="text" name="" id="valor-final">
+                    </label>
+                    <button onclick="filtrarPersonalizado()">PESQUISAR</button>
+                </li>
+<br>
+                <li>
+                    <button onclick="updateElementos(produtos)">Ver todos</button>
+                </li>
+            </ul>
+
+        </div>
+
+        <div id="produtos">
+            <!-- <div class="produto">
+                <div class="imagem-produto">
+                    <img src="./assets/naruto.jpg" alt="boneco_do_naruto">
+                </div>
+                <div class="info">
+                    <p class="nome">Boneco do Naruto</p>
+                    <p class="moeda"">R$</p>
+                    <p class="preco">200</p>
+                </div>
+               </div>
+            </div> -->
+        </div>
+        
+
+    </main>
+
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
